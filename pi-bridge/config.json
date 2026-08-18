@@ -1,0 +1,17 @@
+{
+  "serial_port": "/dev/ttyUSB0",
+  "baud_rate": 115200,
+  "websocket_host": "0.0.0.0",
+  "websocket_port": 8765,
+  "boat_id": "trashboat-01",
+
+  "pwm_min": 1000,
+  "pwm_neutral": 1500,
+  "pwm_max": 2000,
+
+  "arm_ready_line": "Armed and ready",
+  "arm_wait_timeout_sec": 5.0,
+
+  "client_silence_timeout_sec": 0.3,
+  "silence_check_interval_sec": 0.05
+}

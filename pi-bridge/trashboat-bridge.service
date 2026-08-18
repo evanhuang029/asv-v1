@@ -1,0 +1,24 @@
+[Unit]
+Description=Trashboat WebSocket-to-serial bridge
+After=network.target
+# If the Pi hosts its own WiFi hotspot via hostapd/dnsmasq, uncomment so the
+# bridge starts once the hotspot is up (adjust unit names to match your setup):
+# After=network.target hostapd.service dnsmasq.service
+# Wants=hostapd.service dnsmasq.service
+
+[Service]
+Type=simple
+User=pi
+WorkingDirectory=/home/pi/trashboat/pi-bridge
+ExecStart=/usr/bin/python3 /home/pi/trashboat/pi-bridge/bridge.py
+Restart=on-failure
+RestartSec=2
+# ESP32 shows up as /dev/ttyUSB0 -- make sure the `pi` user is in the
+# `dialout` group (sudo usermod -aG dialout pi) or this will fail to open
+# the port.
+StandardOutput=journal
+StandardError=journal
+SyslogIdentifier=trashboat-bridge
+
+[Install]
+WantedBy=multi-user.target
