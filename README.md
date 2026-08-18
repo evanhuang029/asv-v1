@@ -1,8 +1,10 @@
-# Trashboat Control
+# Autonomous Surface Vessel Project — Version 1 (ASV v1)
 
-Control app for an autonomous trash-collecting boat (twin-pontoon catamaran).
-This repo contains the two layers built on top of the existing, unmodified
-hardware/firmware:
+Control system for a twin-pontoon autonomous surface vessel (ASV) built for
+waterway debris collection. This repo contains the two software layers built
+on top of the existing, unmodified hardware/firmware:
+
+License: [MIT](LICENSE)
 
 ```
 iOS App (app/)
