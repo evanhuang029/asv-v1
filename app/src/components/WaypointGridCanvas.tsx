@@ -148,6 +148,12 @@ function WaypointMarker({
     }
   };
 
+  // A single press-and-hold gesture drives both drag and long-press-delete,
+  // disambiguated by whether the finger moves past DRAG_THRESHOLD_PX before
+  // LONG_PRESS_DELETE_MS elapses: the delete timer is armed on touch-down and
+  // only fires if the marker hasn't moved yet; the first move past the
+  // threshold cancels it and switches into drag mode for the rest of the
+  // gesture.
   const panResponder = useRef(
     PanResponder.create({
       onStartShouldSetPanResponder: () => true,

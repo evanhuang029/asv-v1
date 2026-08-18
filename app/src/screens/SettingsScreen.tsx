@@ -39,6 +39,11 @@ function Field({ label, value, onChangeText, keyboardType = 'default', dark }: F
   );
 }
 
+// Every field below is edited in local text state first and only written to
+// the (persisted) store when the user taps the "Tap to apply" hint that
+// appears while the text differs from the committed value -- this avoids
+// writing invalid/partial numbers (e.g. "150" while still typing "1500")
+// into settings that PWM math and the connection depend on.
 export default function SettingsScreen() {
   const dark = useColorScheme() === 'dark';
   const settings = useBoatStore(s => s.settings);
