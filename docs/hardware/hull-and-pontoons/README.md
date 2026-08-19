@@ -20,10 +20,8 @@ collection.
 
 Both pontoons, each with a thruster mounted at the stern end (connected via
 a bullet-connector cable pair). Pontoon material is a rigid foam core with
-a resin coating (see Specs above). The two white pointed pieces visible at
-the opposite (bow) end of each pontoon are a separate feature from the
-thrusters -- TODO document their purpose. The e-bike in frame is for scale
-only, not part of the vessel.
+a resin coating (see Specs above). The e-bike in frame is for scale only,
+not part of the vessel.
 
 ## Mounting points
 
