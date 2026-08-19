@@ -64,12 +64,16 @@ not guesses.
 ![Full boat entering the water for a pool test](images/full-boat-pool-test-launch.jpg)
 
 Pool test: the fully assembled vessel, both pontoons joined by metal
-crossbeams, with the electronics enclosure resting on top.
+crossbeams, with the electronics enclosure on top. This was the first
+test run -- the box was taped to the crossbeams as a temporary,
+prototype-stage fix, not the permanent mounting method (see
+[`hull-and-pontoons/README.md`](hull-and-pontoons/README.md#mounting-points)).
 
 ![Full boat floating during the pool test](images/full-boat-pool-test-floating.jpg)
 
 Floating unassisted -- side/rear view showing the waterproof enclosure
-resting on the crossbeams between the two pontoons.
+and the wood ballast piece on the crossbeams between the two pontoons.
+The tape visible here is the same first-test temporary fix noted above.
 
 ### Photos needed
 

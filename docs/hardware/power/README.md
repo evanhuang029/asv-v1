@@ -6,9 +6,9 @@ Powers the ESP32, Raspberry Pi, and both ESCs/thrusters.
 
 | | |
 |---|---|
-| Battery chemistry | Likely LiPo -- not confirmed by a legible battery label, but inferred from (a) both ESCs' own spec printed as "2-4S LiPo" input, and (b) the bench charger being an iSDT smart charger (a LiPo/LiHV-focused charger family). TODO confirm directly off the battery's label. |
+| Battery chemistry | Likely LiPo -- brand "HOTA" is legible on the battery wrap (HOTA makes LiPo packs), and this matches (a) both ESCs' own spec printed as "2-4S LiPo" input, and (b) the bench charger being an iSDT smart charger (a LiPo/LiHV-focused charger family). TODO confirm exact model/chemistry off the full label. |
 | Voltage / cell count | TODO -- ESCs support 2-4S LiPo (7.4-16.8V nominal range), but the pack's actual S-count isn't confirmed |
-| Capacity | TODO -- battery label not legible in available photos |
+| Capacity | TODO -- capacity not legible in available photos |
 | Distribution | XT60 connectors off the battery feed the switch/ESC wiring; each ESC has its own integrated SBEC (5.5V/4A) plus a separate standalone UBEC module also on the board -- see photo below. Full distribution topology (what the UBEC vs. the SBECs each power) still TODO. |
 | Switch / disconnect | 3x SPDT toggle switches (ON/OFF bat-handle style) wired inline in the enclosure -- which switch is main power vs. arm/aux per-thruster is still TODO |
 | Fusing | No fuse holder visible in any photographed wiring -- TODO confirm whether fusing exists elsewhere in the harness |
@@ -16,19 +16,22 @@ Powers the ESP32, Raspberry Pi, and both ESCs/thrusters.
 
 ![Wiring close-up: switches, ESCs, and a UBEC](images/wiring-switches-escs-closeup.jpg)
 
-Close-up of the switch/distribution wiring: 3 toggle switches, XT60
-connectors, both ESCs (Diamond Hobby Python 20A, each with an integrated
-"SBEC 5.5V 4A"), and a separate small blue board labeled "UBEC ... 5A" in
-its own static bag -- a second, standalone regulator distinct from the
-ESCs' built-in SBECs. TODO confirm which toggle is main power vs.
-arm/aux, and which loads the standalone UBEC feeds vs. the ESCs' SBECs.
+Close-up of the switch/distribution wiring at an earlier bench-test stage
+(2 of the 3 toggle switches are in frame here), XT60 connectors, both
+ESCs (Diamond Hobby Python 20A, each with an integrated "SBEC 5.5V 4A"),
+and a separate small blue board labeled "UBEC ... 5A" in its own static
+bag -- a second, standalone regulator distinct from the ESCs' built-in
+SBECs. See `enclosure-assembled.jpg` in
+[`electronics/README.md`](../electronics/README.md) for all 3 switches in
+the final cage. TODO confirm which toggle is main power vs. arm/aux, and
+which loads the standalone UBEC feeds vs. the ESCs' SBECs.
 
 ![Battery pack and iSDT charger on the bench](../electronics/images/enclosure-interior-bench.jpg)
 
-A battery pack (label mostly obscured, wrapped in bubble wrap) and an
-iSDT smart charger with its retail box, shown during bench setup rather
-than mounted on the boat -- TODO confirm battery spec directly and
-photograph it in its actual mounted location.
+A battery pack (brand "HOTA" legible on the wrap; voltage/capacity not
+legible) and an iSDT smart charger with its retail box, shown during
+bench setup rather than mounted on the boat -- TODO confirm full battery
+spec and photograph it in its actual mounted location.
 
 **No voltage/current telemetry is installed yet.** The app's Drive screen
 has a UI slot for battery level wired to a static mock value (see the
