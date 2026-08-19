@@ -45,7 +45,7 @@ system.
 
 | Component | Spec | Notes |
 |---|---|---|
-| Hull | Foam-core, resin-coated pontoons, wood crossbar; dimensions TODO | Twin-pontoon catamaran layout |
+| Hull | Foam-core, resin-coated pontoons, wood crossbar; pontoons 750mm long, 100x150mm cross-section, 700mm overall beam | Twin-pontoon catamaran layout, see [`hull-and-pontoons/README.md`](hull-and-pontoons/README.md) |
 | Thrusters | 2x ApisQueen U2 Mini | See [`propulsion/README.md`](propulsion/README.md) |
 | ESCs | 2x Diamond Hobby Python 20A, 2-4S LiPo input, integrated 5.5V/4A SBEC | Signal from ESP32 GPIO 25 (left), GPIO 26 (right) |
 | Main controller | ESP32, TODO (exact board/module) | Reference-only firmware, see [`docs/software/esp32-firmware/README.md`](../software/esp32-firmware/README.md) |

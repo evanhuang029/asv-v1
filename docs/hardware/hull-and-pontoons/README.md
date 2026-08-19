@@ -9,10 +9,10 @@ collection.
 |---|---|
 | Configuration | Twin-pontoon catamaran |
 | Material | Rigid foam core (individual foam cells visible at the shaped/cut edges), coated with an amber resin skin for waterproofing -- exact foam type (XPS/EPS/other) and resin product still TODO |
-| Overall length | TODO -- no reliable scale reference in available photos |
-| Overall beam (width) | TODO |
-| Pontoon diameter/cross-section | TODO |
-| Deck/crossbar material | Wood (species/treatment TODO) -- see photo in Mounting points below |
+| Pontoon length | 750mm |
+| Pontoon cross-section | 100mm wide x 150mm tall |
+| Gap between pontoons | 500mm (inner edge to inner edge) |
+| Overall beam (width) | 700mm (100 + 500 + 100) |
 | Approx. weight (dry) | TODO |
 | Approx. weight (with electronics/battery) | TODO |
 
