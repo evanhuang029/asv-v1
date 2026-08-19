@@ -22,21 +22,24 @@ for the full boot/arm timing.
 
 ## Enclosure
 
+Two-part system: an inner 3D-printed "cage" that holds all the components,
+which sits inside an outer waterproof box that exists purely for
+waterproofing -- the cage itself is not watertight.
+
 ![Enclosure mounted on the boat, closed, during the pool test](images/enclosure-mounted-exterior.jpg)
 
-The final enclosure is a clear-lidded, latched waterproof box (dry-box
-style), strapped to a wooden rail that bridges the two pontoons -- seen
-here closed and mounted during the pool test. TODO: document exact box
-make/model, IP rating, and cable entry/gland points.
+The outer waterproof box: clear-lidded, latched, strapped to a wooden rail
+that bridges the two pontoons -- seen here closed and mounted during the
+pool test. TODO: document exact box make/model, IP rating, and cable entry/
+gland points.
 
-![Assembled electronics enclosure (bench)](images/enclosure-assembled.jpg)
+![Assembled electronics cage (bench)](images/enclosure-assembled.jpg)
 
-A 3D-printed two-tier enclosure/tray, photographed separately on the
-bench -- **not confirmed to be the same box** as the waterproof dry-box
-shown mounted on the boat above; TODO clarify whether this tray sits
-inside that box or is an earlier iteration. Top tier: 3 toggle switches,
-two ESCs (one labeled "PYTHON ... 20A"), XT60 connectors for battery
-input. Bottom tier (visible through the open side): Raspberry Pi. See
+The inner 3D-printed two-tier cage, photographed separately on the bench
+before going into the waterproof box above. Bottom tier: ESP32, battery,
+and Raspberry Pi (only the Pi is clearly visible from this angle). Top
+tier: both ESCs (one labeled "PYTHON ... 20A"), 3 toggle switches, and XT60
+connectors for battery input. See
 [`docs/hardware/propulsion/README.md`](../propulsion/README.md) for the
 ESCs and [`docs/hardware/power/README.md`](../power/README.md) for the
 switches/connectors shown here.

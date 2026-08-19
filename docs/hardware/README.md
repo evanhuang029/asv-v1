@@ -52,7 +52,7 @@ system.
 | Bridge computer | Raspberry Pi 4, TODO (RAM size) | Runs `pi-bridge/`, connects to ESP32 via USB |
 | Battery | TODO (chemistry, voltage, capacity) | Charged with an ISDT smart charger; no onboard voltage/current telemetry installed yet |
 | Wiring / connectors | XT60 (battery), bare bullet connectors (thruster leads), a UBEC (5V regulator) for logic power | TODO confirm gauge and UBEC output rating |
-| Enclosure | Clear-lidded latched dry-box, strapped to a wooden crossbar between the pontoons | See [`electronics/README.md`](electronics/README.md) -- TODO document exact make/model, IP rating |
+| Enclosure | 3D-printed component cage (ESP32, battery, Pi on bottom; ESCs + switches on top) inside a clear-lidded latched dry-box, strapped to a wooden crossbar between the pontoons | Dry-box is for waterproofing only. See [`electronics/README.md`](electronics/README.md) -- TODO document dry-box exact make/model, IP rating |
 
 Fill in the `TODO` fields as the build is finalized -- they're placeholders,
 not guesses.

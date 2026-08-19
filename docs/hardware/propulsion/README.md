@@ -30,12 +30,13 @@ Both thrusters mounted at the stern of each pontoon -- see
 [`docs/hardware/hull-and-pontoons/README.md`](../hull-and-pontoons/README.md)
 for the full pontoon photo.
 
-![ESCs mounted in the electronics enclosure](../electronics/images/enclosure-assembled.jpg)
+![ESCs mounted in the component cage](../electronics/images/enclosure-assembled.jpg)
 
-Both ESCs mounted in the top tier of the electronics enclosure, alongside
-the power switches -- one ESC is labeled "PYTHON ... 20A". See
+Both ESCs mounted in the top tier of the inner component cage (the
+3D-printed tray that sits inside the outer waterproof box), alongside the
+power switches -- one ESC is labeled "PYTHON ... 20A". See
 [`docs/hardware/electronics/README.md`](../electronics/README.md) for the
-full enclosure photo.
+full cage/enclosure explanation and photos.
 
 ---
 
