@@ -13,9 +13,9 @@ and power system. For the software that runs on top of this hardware, see
 ## System overview
 
 ```
-                    ┌───────────────────────────┐
-                    │        Hull / pontoons     │
-                    │  (twin-pontoon catamaran)  │
+                    ┌─────────────────────────────┐
+                    │        Hull / pontoons      │
+                    │  (twin-pontoon catamaran)   │
                     └──────────────┬──────────────┘
                                    │ mounts
         ┌──────────────────────────┼──────────────────────────┐
