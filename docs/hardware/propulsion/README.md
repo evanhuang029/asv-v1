@@ -10,7 +10,7 @@ for the exact signal protocol.
 | | |
 |---|---|
 | Model | ApisQueen U2 Mini (x2) |
-| Mounting | Pontoon-integrated: each thruster sits in a shaped recess molded/cut into the stern end of its pontoon's foam core, not a separate bracket -- see photo below. Exact attachment (adhesive/fasteners) still TODO. |
+| Mounting | Each thruster connects to a 3D-printed white mounting piece at the stern end of its pontoon, fastened with both screws and adhesive -- see photo below. |
 | Side | Left = port pontoon, Right = starboard pontoon -- TODO confirm (no bow/stern orientation reference in the photos) |
 | Direction | Unconfirmed which thruster(s) need inverting. The app's Invert Left/Right toggles (Drive screen and Settings) exist specifically to correct this without touching firmware. |
 
