@@ -18,9 +18,10 @@ ESP32 (esp32-firmware/ -- reference only, DO NOT MODIFY)
 ```
 
 **The ESP32 firmware is not touched by this project.** It has no
-comms-loss failsafe of its own beyond its 500ms serial-silence hold; the Pi
-bridge independently forces neutral after 300ms of app silence as a
-software safety net on top of that (see `pi-bridge/bridge.py`).
+comms-loss failsafe of its own by design; the Pi bridge forces neutral
+after 300ms of app silence, and that watchdog is the only thing that
+reverts the thrusters to neutral if the app or WiFi link drops (see
+`pi-bridge/bridge.py`).
 
 ---
 

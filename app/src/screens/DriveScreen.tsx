@@ -33,9 +33,9 @@ type ControlMode = 'joystick' | 'tank';
  * consecutive ~1s readings (see BoatConnection's SIGNAL_PING_INTERVAL_MS)
  * trigger the auto-shutdown. Requiring more than one bad reading avoids
  * tripping on a single dropped ping. This is a UX safety net on top of,
- * not a replacement for, the bridge's 300ms silence watchdog and the
- * ESP32's 500ms serial failsafe, which apply regardless of whether this
- * fires. */
+ * not a replacement for, the bridge's 300ms silence watchdog, which
+ * applies regardless of whether this fires (the ESP32 firmware has no
+ * comms-loss failsafe of its own). */
 const TOO_FAR_BARS_THRESHOLD = 1;
 const TOO_FAR_CONSECUTIVE_TICKS = 2;
 

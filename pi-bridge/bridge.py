@@ -10,10 +10,12 @@ relays ESP32 serial output back to the app as `log` messages for its debug
 console.
 
 Safety notes:
-  - This bridge independently forces neutral if the app goes silent for
-    `client_silence_timeout_sec` (default 300ms). That is a software safety
-    net on top of, not a replacement for, the ESP32 firmware's own 500ms
-    serial-silence failsafe. The firmware is not modified by this bridge.
+  - This bridge forces neutral if the app goes silent for
+    `client_silence_timeout_sec` (default 300ms). The ESP32 firmware has
+    no comms-loss failsafe of its own (by design -- see
+    esp32-firmware/motor_controller.ino), so this watchdog is the only
+    thing that reverts the thrusters to neutral if the app or the WiFi
+    link drops. The firmware is not modified by this bridge.
   - On explicit client disconnect (including STOP+disconnect from the app),
     neutral is forced immediately.
   - Only one app connection is served at a time -- a new connection drops
@@ -95,8 +97,8 @@ class Bridge:
 
     async def silence_watchdog(self) -> None:
         """Force neutral if the app goes silent for client_silence_timeout_sec
-        -- independent of, and in addition to, the ESP32's own 500ms
-        serial-silence failsafe."""
+        -- the ESP32 firmware has no comms-loss failsafe of its own, so this
+        is the only thing that reverts the thrusters to neutral."""
         timeout = self.config["client_silence_timeout_sec"]
         interval = self.config["silence_check_interval_sec"]
         while True:

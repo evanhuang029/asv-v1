@@ -14,9 +14,10 @@ ESP32 (esp32-firmware/ -- reference only, DO NOT MODIFY)
 ```
 
 **The ESP32 firmware is not touched by this project.** It has no
-comms-loss failsafe of its own beyond its 500ms serial-silence hold; the Pi
-bridge independently forces neutral after 300ms of app silence as a
-software safety net on top of that.
+comms-loss failsafe of its own by design (see
+`esp32-firmware/motor_controller.ino`); the Pi bridge forces neutral
+after 300ms of app silence, and that watchdog is the only thing that
+reverts the thrusters to neutral if the app or WiFi link drops.
 
 For the physical build (hull, thrusters, ESCs, wiring, power), see
 [`docs/hardware/`](../hardware/README.md).
@@ -83,9 +84,11 @@ Pi → App:
 ## Safety summary
 
 - App sends a `drive` message every 150ms (and immediately on every
-  control change) -- comfortably inside the ESP32's 500ms failsafe window.
-- Bridge independently forces neutral if the app goes silent for 300ms,
-  before the ESP32's own failsafe would ever trigger.
+  control change), keeping well inside the bridge's 300ms silence window.
+- Bridge forces neutral if the app goes silent for 300ms. Since the ESP32
+  firmware has no comms-loss failsafe of its own, this bridge-side
+  watchdog is the only thing that reverts the thrusters to neutral if the
+  app or WiFi link drops -- there is no ESP32-level backstop.
 - STOP button on the Drive screen sends `stop`, then closes the WebSocket
   entirely; reconnecting requires the user to explicitly return to the
   Connect screen and tap Connect again -- no auto-reconnect after an
@@ -94,6 +97,7 @@ Pi → App:
   unexpected drops), and drops (with a forced-neutral write) any
   previously active client when a new one connects, since this is a
   single-operator boat.
-- Nothing in the app or bridge suppresses or delays the ESP32's own
-  500ms serial-silence failsafe -- that remains the last line of defense
-  if WiFi is lost entirely.
+- If the Pi/bridge process itself crashes or the USB serial link to the
+  ESP32 is cut (as opposed to the app/WiFi link), the ESP32 has no
+  failsafe of its own and will keep outputting the last PWM values it
+  received -- this is a real gap, not currently covered by any watchdog.

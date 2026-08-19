@@ -8,8 +8,8 @@ const RECONNECT_MAX_DELAY_MS = 8000;
 
 /** How often to ping the bridge to measure link round-trip time for the
  * signal-bars indicator. Separate from the 150ms drive heartbeat -- that
- * cadence is about the bridge/ESP32 failsafe timers, this one is about a
- * human-readable signal reading, so 1s is plenty. */
+ * cadence is about feeding the bridge's silence watchdog, this one is
+ * about a human-readable signal reading, so 1s is plenty. */
 const SIGNAL_PING_INTERVAL_MS = 1000;
 
 /** RTT (ms) upper bound for each bar count, strongest first. iOS doesn't
@@ -43,8 +43,9 @@ export interface BoatConnectionHandlers {
  *
  * Owns reconnect-with-backoff (only for unexpected drops -- never after an
  * explicit STOP/disconnect) and the 150ms drive-heartbeat loop that keeps
- * the bridge's 300ms silence watchdog (and, one hop further, the ESP32's
- * 500ms serial failsafe) from tripping during normal operation.
+ * the bridge's 300ms silence watchdog -- the only comms-loss failsafe in
+ * this system, since the ESP32 firmware has none of its own -- from
+ * tripping during normal operation.
  */
 export class BoatConnection {
   private ws: WebSocket | null = null;
