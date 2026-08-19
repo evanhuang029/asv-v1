@@ -20,9 +20,11 @@ collection.
 
 Both pontoons, each with a thruster mounted at the stern end (connected via
 a bullet-connector cable pair). Pontoon material is a rigid foam core with
-a resin coating (see Specs above). The two white pods near the bow are
-unidentified -- TODO document their purpose (antenna/GPS mounts?). The
-e-bike in frame is for scale only, not part of the vessel.
+a resin coating (see Specs above). The two white pieces visible at the
+stern of each pontoon are the 3D-printed thruster mounting pieces (see
+[`docs/hardware/propulsion/README.md`](../propulsion/README.md)) -- there
+are no separate bow-mounted pods. The e-bike in frame is for scale only,
+not part of the vessel.
 
 ## Mounting points
 
