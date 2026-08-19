@@ -45,14 +45,14 @@ system.
 
 | Component | Spec | Notes |
 |---|---|---|
-| Hull | Foam-core, resin-coated pontoons, wood crossbar; pontoons 750mm long, 100x150mm cross-section, 700mm overall beam | Twin-pontoon catamaran layout, see [`hull-and-pontoons/README.md`](hull-and-pontoons/README.md) |
+| Hull | Foam-core, resin-coated pontoons, metal crossbeams; pontoons 750mm long, 100x150mm cross-section, 700mm overall beam | Twin-pontoon catamaran layout, see [`hull-and-pontoons/README.md`](hull-and-pontoons/README.md) |
 | Thrusters | 2x ApisQueen U2 Mini | See [`propulsion/README.md`](propulsion/README.md) |
 | ESCs | 2x Diamond Hobby Python 20A, 2-4S LiPo input, integrated 5.5V/4A SBEC | Signal from ESP32 GPIO 25 (left), GPIO 26 (right) |
 | Main controller | ESP32, TODO (exact board/module) | Reference-only firmware, see [`docs/software/esp32-firmware/README.md`](../software/esp32-firmware/README.md) |
 | Bridge computer | Raspberry Pi 4, TODO (RAM size) | Runs `pi-bridge/`, connects to ESP32 via USB |
 | Battery | Likely LiPo (inferred, not confirmed by label); voltage/capacity TODO | Charged with an iSDT smart charger; no onboard voltage/current telemetry installed yet |
 | Wiring / connectors | XT60 (battery/ESC power), bare bullet connectors (thruster leads), a standalone "UBEC 5A" module in addition to each ESC's built-in SBEC | TODO confirm wire gauge and exact UBEC output spec |
-| Enclosure | 3D-printed component cage (ESP32, battery, Pi on bottom; ESCs + switches on top) inside a latched dry-box, strapped to a wooden crossbar between the pontoons | Dry-box is for waterproofing only. See [`electronics/README.md`](electronics/README.md) -- TODO document dry-box exact make/model, IP rating |
+| Enclosure | 3D-printed component cage (ESP32, battery, Pi on bottom; ESCs + switches on top) inside a latched dry-box, resting on the metal crossbeams between the pontoons | Dry-box is for waterproofing only. See [`electronics/README.md`](electronics/README.md) -- TODO document dry-box exact make/model, IP rating |
 
 Fill in the `TODO` fields as the build is finalized -- they're placeholders,
 not guesses.
@@ -63,13 +63,13 @@ not guesses.
 
 ![Full boat entering the water for a pool test](images/full-boat-pool-test-launch.jpg)
 
-Pool test: the fully assembled vessel, both pontoons joined by a wooden
-crossbar, with the electronics enclosure mounted on top.
+Pool test: the fully assembled vessel, both pontoons joined by metal
+crossbeams, with the electronics enclosure resting on top.
 
 ![Full boat floating during the pool test](images/full-boat-pool-test-floating.jpg)
 
 Floating unassisted -- side/rear view showing the waterproof enclosure
-mounted on the crossbar between the two pontoons.
+resting on the crossbeams between the two pontoons.
 
 ### Photos needed
 

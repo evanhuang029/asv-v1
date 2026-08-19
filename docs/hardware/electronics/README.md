@@ -28,10 +28,10 @@ waterproofing -- the cage itself is not watertight.
 
 ![Enclosure mounted on the boat, closed, during the pool test](images/enclosure-mounted-exterior.jpg)
 
-The outer waterproof box: latched, strapped to a wooden rail that bridges
-the two pontoons -- seen here closed and mounted during the pool test.
-TODO: document exact box make/model, IP rating, and cable entry/gland
-points.
+The outer waterproof box: latched, resting on the metal crossbeams that
+bridge the two pontoons -- seen here closed and mounted during the pool
+test. TODO: document exact box make/model, IP rating, and cable
+entry/gland points.
 
 ![Assembled electronics cage (bench)](images/enclosure-assembled.jpg)
 

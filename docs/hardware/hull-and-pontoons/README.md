@@ -28,11 +28,13 @@ e-bike in frame is for scale only, not part of the vessel.
 
 ![Full boat floating during the pool test](../images/full-boat-pool-test-floating.jpg)
 
-The two pontoons are bridged by a wooden crossbar/rail; the electronics
-enclosure straps to that rail with what look like cable ties or hook-and-loop
-straps (visible in the pool-test photo above). TODO: confirm crossbar
-material/attachment method (screws/epoxy/lashing) and strap type. Thruster
-mounting is documented in
+The two pontoons are bridged by metal crossbeams. 3D-printed mounting
+brackets attach each crossbeam to the pontoons, fastened with screws and
+lock nuts. The waterproof electronics enclosure lies on top of the
+crossbeams (it is not strapped down). Wood is used elsewhere on the vessel
+to balance weight (ballast), not as part of this crossbeam/mount
+structure. TODO: confirm crossbeam material spec (metal type/gauge).
+Thruster mounting is documented in
 [`docs/hardware/propulsion/README.md`](../propulsion/README.md).
 
 ## Debris collection mechanism
@@ -49,8 +51,8 @@ unbuilt hardware.
 Save to `docs/hardware/hull-and-pontoons/images/`:
 
 - [x] `pontoons-with-thrusters.jpg` -- both pontoons with thrusters mounted at the stern
-- [x] full assembled hull + crossbar -- see `../images/full-boat-pool-test-*.jpg` (embedded above)
-- [ ] `hull-top-down.jpg` -- top-down view of both pontoons and the deck/crossbar, out of water
+- [x] full assembled hull + crossbeams -- see `../images/full-boat-pool-test-*.jpg` (embedded above)
+- [ ] `hull-top-down.jpg` -- top-down view of both pontoons and the deck/crossbeams, out of water
 - [ ] `pontoon-cross-section.jpg` -- close-up of one pontoon's shape/attachment to the deck
-- [ ] `mounting-points.jpg` -- close-up of the crossbar-to-pontoon attachment and enclosure straps
+- [ ] `mounting-points.jpg` -- close-up of the crossbeam-to-pontoon mounting bracket and enclosure resting on the crossbeams
 - [ ] `collection-mechanism.jpg` -- if applicable, the debris scoop/net/bay
