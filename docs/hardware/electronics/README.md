@@ -28,21 +28,22 @@ waterproofing -- the cage itself is not watertight.
 
 ![Enclosure mounted on the boat, closed, during the pool test](images/enclosure-mounted-exterior.jpg)
 
-The outer waterproof box: clear-lidded, latched, strapped to a wooden rail
-that bridges the two pontoons -- seen here closed and mounted during the
-pool test. TODO: document exact box make/model, IP rating, and cable entry/
-gland points.
+The outer waterproof box: latched, strapped to a wooden rail that bridges
+the two pontoons -- seen here closed and mounted during the pool test.
+TODO: document exact box make/model, IP rating, and cable entry/gland
+points.
 
 ![Assembled electronics cage (bench)](images/enclosure-assembled.jpg)
 
 The inner 3D-printed two-tier cage, photographed separately on the bench
-before going into the waterproof box above. Bottom tier: ESP32, battery,
-and Raspberry Pi (only the Pi is clearly visible from this angle). Top
-tier: both ESCs (one labeled "PYTHON ... 20A"), 3 toggle switches, and XT60
-connectors for battery input. See
+(on a perforated aluminum stand used for the photo, not part of the final
+boat mount) before going into the waterproof box above. Bottom tier: ESP32,
+battery, and Raspberry Pi (only the Pi is clearly visible from this angle).
+Top tier: both ESCs (Diamond Hobby Python 20A), 3 toggle switches, XT60
+connectors for battery input, and a standalone UBEC module. See
 [`docs/hardware/propulsion/README.md`](../propulsion/README.md) for the
 ESCs and [`docs/hardware/power/README.md`](../power/README.md) for the
-switches/connectors shown here.
+switches/connectors/UBEC shown here.
 
 ![Full bench layout: Pi, ESP32, battery, wiring, and a pontoon](images/bench-layout-full.jpg)
 
@@ -54,7 +55,7 @@ how the ESP32 and Pi relate to each other before final mounting.
 ![ESP32 + Pi on the bench, close up](images/enclosure-interior-bench.jpg)
 
 Close-up of the same bench setup: ESP32 dev board on a breadboard next to
-a Raspberry Pi 4, with a battery pack and an ISDT smart charger in the
+a Raspberry Pi 4, with a battery pack and an iSDT smart charger in the
 background. TODO: replace with a shot of this wiring inside the actual
 mounted enclosure once finalized.
 

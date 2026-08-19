@@ -8,20 +8,19 @@ collection.
 | | |
 |---|---|
 | Configuration | Twin-pontoon catamaran |
-| Material | TODO |
-| Overall length | TODO |
+| Material | Rigid foam core (individual foam cells visible at the shaped/cut edges), coated with an amber resin skin for waterproofing -- exact foam type (XPS/EPS/other) and resin product still TODO |
+| Overall length | TODO -- no reliable scale reference in available photos |
 | Overall beam (width) | TODO |
 | Pontoon diameter/cross-section | TODO |
-| Deck/crossbar material | TODO |
+| Deck/crossbar material | Wood (species/treatment TODO) -- see photo in Mounting points below |
 | Approx. weight (dry) | TODO |
 | Approx. weight (with electronics/battery) | TODO |
 
 ![Pontoons with thrusters mounted](images/pontoons-with-thrusters.jpg)
 
 Both pontoons, each with a thruster mounted at the stern end (connected via
-a bullet-connector cable pair). Pontoon material appears to be a
-sanded/resin-coated foam or composite core (light tan, rough finish) --
-TODO confirm material and construction. The two white pods near the bow are
+a bullet-connector cable pair). Pontoon material is a rigid foam core with
+a resin coating (see Specs above). The two white pods near the bow are
 unidentified -- TODO document their purpose (antenna/GPS mounts?). The
 e-bike in frame is for scale only, not part of the vessel.
 
@@ -38,7 +37,10 @@ mounting is documented in
 
 ## Debris collection mechanism
 
-TODO: if the hull has a scoop, net, or collection bay, describe it here.
+No scoop, net, or collection bay is visible in any of the available
+photos (pontoons alone or the assembled pool test) -- TODO confirm
+whether a collection mechanism exists yet or is planned as separate,
+unbuilt hardware.
 
 ---
 

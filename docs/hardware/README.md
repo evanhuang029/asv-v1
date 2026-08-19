@@ -45,14 +45,14 @@ system.
 
 | Component | Spec | Notes |
 |---|---|---|
-| Hull | TODO (material, dimensions) | Twin-pontoon catamaran layout |
+| Hull | Foam-core, resin-coated pontoons, wood crossbar; dimensions TODO | Twin-pontoon catamaran layout |
 | Thrusters | 2x ApisQueen U2 Mini | See [`propulsion/README.md`](propulsion/README.md) |
-| ESCs | 2x, 20A rated, TODO (exact make/model -- one labeled "PYTHON") | Signal from ESP32 GPIO 25 (left), GPIO 26 (right) |
+| ESCs | 2x Diamond Hobby Python 20A, 2-4S LiPo input, integrated 5.5V/4A SBEC | Signal from ESP32 GPIO 25 (left), GPIO 26 (right) |
 | Main controller | ESP32, TODO (exact board/module) | Reference-only firmware, see [`docs/software/esp32-firmware/README.md`](../software/esp32-firmware/README.md) |
 | Bridge computer | Raspberry Pi 4, TODO (RAM size) | Runs `pi-bridge/`, connects to ESP32 via USB |
-| Battery | TODO (chemistry, voltage, capacity) | Charged with an ISDT smart charger; no onboard voltage/current telemetry installed yet |
-| Wiring / connectors | XT60 (battery), bare bullet connectors (thruster leads), a UBEC (5V regulator) for logic power | TODO confirm gauge and UBEC output rating |
-| Enclosure | 3D-printed component cage (ESP32, battery, Pi on bottom; ESCs + switches on top) inside a clear-lidded latched dry-box, strapped to a wooden crossbar between the pontoons | Dry-box is for waterproofing only. See [`electronics/README.md`](electronics/README.md) -- TODO document dry-box exact make/model, IP rating |
+| Battery | Likely LiPo (inferred, not confirmed by label); voltage/capacity TODO | Charged with an iSDT smart charger; no onboard voltage/current telemetry installed yet |
+| Wiring / connectors | XT60 (battery/ESC power), bare bullet connectors (thruster leads), a standalone "UBEC 5A" module in addition to each ESC's built-in SBEC | TODO confirm wire gauge and exact UBEC output spec |
+| Enclosure | 3D-printed component cage (ESP32, battery, Pi on bottom; ESCs + switches on top) inside a latched dry-box, strapped to a wooden crossbar between the pontoons | Dry-box is for waterproofing only. See [`electronics/README.md`](electronics/README.md) -- TODO document dry-box exact make/model, IP rating |
 
 Fill in the `TODO` fields as the build is finalized -- they're placeholders,
 not guesses.

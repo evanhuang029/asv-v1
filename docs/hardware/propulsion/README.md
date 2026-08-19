@@ -10,19 +10,20 @@ for the exact signal protocol.
 | | |
 |---|---|
 | Model | ApisQueen U2 Mini (x2) |
-| Mounting | TODO (transom mount / pontoon-integrated / bracket, etc.) |
-| Side | Left = port pontoon, Right = starboard pontoon -- TODO confirm |
+| Mounting | Pontoon-integrated: each thruster sits in a shaped recess molded/cut into the stern end of its pontoon's foam core, not a separate bracket -- see photo below. Exact attachment (adhesive/fasteners) still TODO. |
+| Side | Left = port pontoon, Right = starboard pontoon -- TODO confirm (no bow/stern orientation reference in the photos) |
 | Direction | Unconfirmed which thruster(s) need inverting. The app's Invert Left/Right toggles (Drive screen and Settings) exist specifically to correct this without touching firmware. |
 
 ## ESCs
 
 | | |
 |---|---|
-| Model | TODO |
+| Model | Diamond Hobby Python 20A (x2) -- brand/model legible on both units' labels |
 | Signal source | ESP32 GPIO 25 (left/`esc1`), GPIO 26 (right/`esc2`) |
 | Signal range | 1000-2000us PWM, 1500us = neutral (uncalibrated default) |
-| Power source | TODO -- see [`docs/hardware/power/README.md`](../power/README.md) |
-| Mounting | TODO |
+| Input power | 2-4S LiPo (per the ESC's own printed spec) -- see [`docs/hardware/power/README.md`](../power/README.md) |
+| Integrated BEC | Each ESC has a built-in SBEC rated 5.5V / 4A (its own label: "SBEC 5.5V 4A") |
+| Mounting | Both ESCs sit in the top tier of the component cage -- see photo below |
 
 ![Thrusters mounted on the pontoons](../hull-and-pontoons/images/pontoons-with-thrusters.jpg)
 
@@ -34,7 +35,7 @@ for the full pontoon photo.
 
 Both ESCs mounted in the top tier of the inner component cage (the
 3D-printed tray that sits inside the outer waterproof box), alongside the
-power switches -- one ESC is labeled "PYTHON ... 20A". See
+power switches -- both are Diamond Hobby Python 20A units. See
 [`docs/hardware/electronics/README.md`](../electronics/README.md) for the
 full cage/enclosure explanation and photos.
 
