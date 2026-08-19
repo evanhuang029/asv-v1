@@ -13,8 +13,8 @@ collection.
 | Pontoon cross-section | 100mm wide x 150mm tall |
 | Gap between pontoons | 500mm (inner edge to inner edge) |
 | Overall beam (width) | 700mm (100 + 500 + 100) |
-| Approx. weight (dry) | TODO |
-| Approx. weight (with electronics/battery) | TODO |
+| Approx. weight (dry, per pontoon) | ~6kg |
+| Approx. weight (full vessel, assembled) | ~25kg |
 
 ![Pontoons with thrusters mounted](images/pontoons-with-thrusters.jpg)
 
