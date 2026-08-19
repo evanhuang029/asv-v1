@@ -24,6 +24,19 @@ for the exact signal protocol.
 | Power source | TODO -- see [`docs/hardware/power/README.md`](../power/README.md) |
 | Mounting | TODO |
 
+![Thrusters mounted on the pontoons](../hull-and-pontoons/images/pontoons-with-thrusters.jpg)
+
+Both thrusters mounted at the stern of each pontoon -- see
+[`docs/hardware/hull-and-pontoons/README.md`](../hull-and-pontoons/README.md)
+for the full pontoon photo.
+
+![ESCs mounted in the electronics enclosure](../electronics/images/enclosure-assembled.jpg)
+
+Both ESCs mounted in the top tier of the electronics enclosure, alongside
+the power switches -- one ESC is labeled "PYTHON ... 20A". See
+[`docs/hardware/electronics/README.md`](../electronics/README.md) for the
+full enclosure photo.
+
 ---
 
 ## ESC calibration
@@ -89,9 +102,8 @@ screen to the real values.
 
 Save to `docs/hardware/propulsion/images/`:
 
-- [ ] `thruster-mounted-left.jpg` -- left thruster mounted on its pontoon
-- [ ] `thruster-mounted-right.jpg` -- right thruster mounted on its pontoon
-- [ ] `thruster-closeup.jpg` -- close-up of the ApisQueen U2 Mini itself (propeller/shaft/housing)
-- [ ] `esc-mounted.jpg` -- ESC(s) mounted in place, wiring visible
+- [x] both thrusters mounted -- see `../hull-and-pontoons/images/pontoons-with-thrusters.jpg` (embedded above)
+- [x] ESCs mounted -- see `../electronics/images/enclosure-assembled.jpg` (embedded above)
+- [ ] `thruster-closeup.jpg` -- close-up of one ApisQueen U2 Mini (propeller/shaft/housing)
 - [ ] `esc-wiring-signal.jpg` -- signal wire routing from ESP32 GPIO pins to the ESC
 - [ ] `esc-wiring-power.jpg` -- ESC power leads back to the battery/distribution

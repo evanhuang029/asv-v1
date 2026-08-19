@@ -14,6 +14,20 @@ Powers the ESP32, Raspberry Pi, and both ESCs/thrusters.
 | Fusing | TODO (fuse ratings and locations) |
 | Charging | TODO (onboard vs. removable battery, connector type) |
 
+![Wiring close-up: switches, ESCs, and a UBEC](images/wiring-switches-escs-closeup.jpg)
+
+Close-up of the switch/distribution wiring: 3 toggle switches, XT60
+connectors, both ESCs (20A, one labeled "PYTHON"), and a small blue
+board labeled "UBEC 5V" (a switching regulator, likely stepping battery
+voltage down for the Pi/logic side) -- TODO confirm which toggle is main
+power vs. arm/aux, and confirm the UBEC's role/output rating.
+
+![Battery pack and ISDT charger on the bench](../electronics/images/enclosure-interior-bench.jpg)
+
+A battery pack (label mostly obscured) and an ISDT smart charger, shown
+during bench setup rather than mounted on the boat -- TODO confirm battery
+spec and photograph it in its actual mounted location.
+
 **No voltage/current telemetry is installed yet.** The app's Drive screen
 has a UI slot for battery level wired to a static mock value (see the
 `TODO` comment in `app/src/state/useBoatStore.ts`) -- wiring in a real
@@ -33,8 +47,9 @@ sensor is future work, see
 
 Save to `docs/hardware/power/images/`:
 
-- [ ] `battery-mounted.jpg` -- battery in its mounting location
+- [x] `wiring-switches-escs-closeup.jpg` -- switches, ESCs, XT60 connectors, UBEC
+- [x] battery + charger (bench, not mounted) -- see `../electronics/images/enclosure-interior-bench.jpg` (embedded above)
+- [ ] `battery-mounted.jpg` -- battery in its actual mounting location on the boat
 - [ ] `power-distribution.jpg` -- distribution block/terminal wiring to Pi, ESP32, and ESCs
-- [ ] `main-switch.jpg` -- main power switch/breaker
 - [ ] `fuses.jpg` -- fuse holder(s)/ratings, if present
 - [ ] `charging-port.jpg` -- charging connector, if onboard charging is used

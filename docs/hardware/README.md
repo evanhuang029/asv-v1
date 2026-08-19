@@ -47,25 +47,35 @@ system.
 |---|---|---|
 | Hull | TODO (material, dimensions) | Twin-pontoon catamaran layout |
 | Thrusters | 2x ApisQueen U2 Mini | See [`propulsion/README.md`](propulsion/README.md) |
-| ESCs | 2x, TODO (make/model) | Signal from ESP32 GPIO 25 (left), GPIO 26 (right) |
+| ESCs | 2x, 20A rated, TODO (exact make/model -- one labeled "PYTHON") | Signal from ESP32 GPIO 25 (left), GPIO 26 (right) |
 | Main controller | ESP32, TODO (exact board/module) | Reference-only firmware, see [`docs/software/esp32-firmware/README.md`](../software/esp32-firmware/README.md) |
 | Bridge computer | Raspberry Pi 4, TODO (RAM size) | Runs `pi-bridge/`, connects to ESP32 via USB |
-| Battery | TODO (chemistry, voltage, capacity) | No voltage/current telemetry installed yet |
-| Wiring / connectors | TODO | |
-| Enclosure | TODO | Waterproofing for ESP32 + Pi |
+| Battery | TODO (chemistry, voltage, capacity) | Charged with an ISDT smart charger; no onboard voltage/current telemetry installed yet |
+| Wiring / connectors | XT60 (battery), bare bullet connectors (thruster leads), a UBEC (5V regulator) for logic power | TODO confirm gauge and UBEC output rating |
+| Enclosure | Clear-lidded latched dry-box, strapped to a wooden crossbar between the pontoons | See [`electronics/README.md`](electronics/README.md) -- TODO document exact make/model, IP rating |
 
 Fill in the `TODO` fields as the build is finalized -- they're placeholders,
 not guesses.
 
 ---
 
-## Photos needed
+## Photos
 
-General/overview shots (add to `docs/hardware/images/`):
+![Full boat entering the water for a pool test](images/full-boat-pool-test-launch.jpg)
 
-- [ ] Full boat, front-on
-- [ ] Full boat, side profile
-- [ ] Full boat, top-down (both pontoons + electronics enclosure visible)
+Pool test: the fully assembled vessel, both pontoons joined by a wooden
+crossbar, with the electronics enclosure mounted on top.
+
+![Full boat floating during the pool test](images/full-boat-pool-test-floating.jpg)
+
+Floating unassisted -- side/rear view showing the waterproof enclosure
+mounted on the crossbar between the two pontoons.
+
+### Photos needed
+
+- [x] ~~Full boat, front-on~~ -- see pool test launch photo above
+- [x] ~~Full boat, side profile~~ -- see pool test floating photo above
+- [ ] Full boat, top-down (both pontoons + electronics enclosure visible, out of water)
 
 Each subsystem below has its own more specific list -- see the linked
 README for exactly which close-ups are useful and where to save them.
